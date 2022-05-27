@@ -1,0 +1,306 @@
+.hihi{
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+.header  img{
+    width: 105px;
+    height: 105px;
+    padding-top: 15px;
+    margin-left: 150px;
+}
+
+ul#menu {
+    float: right;
+    margin-top: 40px;
+    padding-right: 200px;
+}
+#menu img{
+    height: 32px;
+    width: 38px;
+    margin-top: 17px;
+    margin-left: 10px;
+}
+ul#menu li{
+    float: left;
+    margin-top: 30px;
+    list-style: none;
+}
+ul#menu li a{
+    padding: 12px 15px;
+    text-decoration: none;
+    color: black;
+    font-family: inherit;
+    font-size: 25px;
+}
+ul#menu li a:hover{
+    color: red;
+}
+.wrap ul{
+    text-align: center;
+    padding-top: 10px ;     
+}
+.wrap ul li {
+    
+    list-style: none;
+}
+.wrap ul li a {
+    text-decoration: none;
+    color: black;
+    font-family: monospace;
+    line-height: 1.1;  
+    font-size: 25px;  
+}
+.photo{
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+.photo img{
+    width: 100%;
+    box-sizing: border-box;
+}
+.photo .card {
+    width: 25%;
+    margin-bottom: 10px;
+    font-size: 15px;
+    border: 5px white solid;
+    position: relative;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+.photo .card u{
+    padding-left: 57px;
+    color: #000000;
+    line-height: 16px;
+    overflow: hidden;
+    font-family:monospace ;
+}
+.photo .card p{
+    font-family:cursive;
+}
+.photo .card .content-text{
+    position: absolute;
+    top: 10px;
+    left: 100px;
+}
+.photo2{
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+.photo2 img{
+   float: left;
+   width: 409px;
+   height: 549px;
+}
+.photo2 .card{
+    width: 33%;
+    margin-bottom: 10px;
+    float: left;
+    font-size: 15px;
+    border: 5px white solid;
+    position: relative;
+    box-sizing: border-box;
+}
+.photo2 .card a :hover{
+    transform: scale(0.9);
+    transition: 1ms;
+    border: solid 1px black;
+    box-shadow: rgb(red, green, blue);
+}
+.photo2 .card .content-text{
+    position: absolute;
+    top: 80px;
+    left: 15px;
+    margin: 110px;
+    font-size: 22px;
+    font-family: serif;
+    color: black;
+}
+.wrap ul{
+    clear: both;
+    text-align: center;
+    padding-top: 15px ;     
+}
+.wrap ul li {
+    
+    list-style: none;
+}
+.wrap ul li p{
+    color: dimgray;
+    font-family: monospace;
+}
+.wrap ul li a {
+    text-decoration: none;
+    color: black;
+    font-family: monospace;
+    line-height: 1.1;  
+    font-size: 25px;  
+}
+.photo3{
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+.photo3 .card{
+    width: 25%;
+    box-sizing: border-box;
+}
+.photo3 .card img{
+    width: 100%;
+    box-sizing: border-box;
+}
+.photo4{
+    flex-wrap: wrap;  
+    margin: 0 auto;      
+}
+  
+
+.photo4 img{
+    width: 100%;
+}
+.card1{
+    overflow: hidden;
+    width: 20%;
+}
+.photo5{
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+    width: 1200px;
+    margin: 0 auto;
+}
+.photo5 img{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 2px;
+    border: solid 2px white;
+}
+
+.end{
+    width: 80%;
+    clear: both;
+    float: left;
+    display: flex;
+    overflow: hidden;
+    /* flex-wrap: wrap; */
+    /* box-sizing: border-box; */
+}
+
+.end ul{
+    clear: both;
+    width: 40%;
+    margin-left: 80px;
+}
+.end ul li{
+    list-style: none;
+    clear: both;
+    width: 100%;
+}
+.end ul li a{
+    text-decoration: none;
+    font-family: monospace;
+    color: black;
+}
+
+#end2{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#end2 ul{
+    float: left;
+    width: 50%;
+    margin-top: 50px;
+}
+#end2 ul li{
+    list-style: none;
+}
+#end2 ul li a{
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+    font-family: monospace;
+}
+#end3{
+    float: left ;
+    flex-wrap: wrap;
+
+}
+#end3 ul{
+    float: left;
+    list-style: none;
+}
+#end3 ul li a{
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    font-family: monospace;
+}
+.content-nav form input {
+  border: none;
+  background: #fff;
+  padding: 7px;
+  outline: none;
+  border-radius: 12px;
+}
+
+.content-nav form button {
+  padding: 5px;
+  border-radius: 12px;
+  position: absolute;
+  right: 0;
+  top: 2px;
+  border: none;
+  outline: none;
+  background: #fff;
+}
+
+    @media only screen and (max-width: 600px) {
+        .photo {
+            width: 100% !important;
+        }
+        .photo .card{
+            width: 100% !important;
+        }
+
+        .photo2 {
+            width: 100% !important;
+        }
+        .photo2 .card{
+            width: 100% !important;
+        }
+
+        .photo3 {
+            width: 100% !important;
+        }
+        .photo3 .card{
+            width: 100% !important;
+        }
+
+        .photo4{
+            width: 100% !important;
+        }
+
+        .photo5{
+            width: 100% !important;
+        }
+        .photo5 .card1 {
+            width: 100% !important;
+        }
+        .hihi{
+            width: 100% !important;
+        }
+        .hihi .ban{
+            width: 100% !important;
+        }
+        .het {
+            width: 100% !important;
+        }
+        .wrap{
+            width: 100% !important;
+        }
+    }

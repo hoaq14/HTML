@@ -1,0 +1,141 @@
+.container{
+    padding: 0px 100px
+}
+
+#hoot{
+    padding: 0px 15px;
+    margin:0px 119px;
+}
+
+ul li{
+    list-style: none;
+}
+
+.clearFix{
+    clear: both;
+}
+
+#inder ul li{
+    float: right;
+    margin: 0px 10px;
+}
+
+#inder ul li a{
+    font-size: 13px;
+    text-decoration: none;
+    color:black ;
+}
+
+#inder ul li :hover{
+    color: red;
+}
+
+#wrapper{
+    width: 960px;
+    margin: 0px auto;
+} 
+
+#header a img{
+    float: left;
+    width: 90px;
+    height: 55px;
+}
+
+ul#menu {
+    float: right;
+    margin: 20px;
+}
+
+ul#menu li{
+    float: left;
+    margin-top: 30px;
+}
+
+#logo{
+    float: left;
+    margin-top: 29px;
+}
+
+#logo img{
+    height: 100%;
+    width: auto;
+}
+
+ul#menu li a{
+    
+    padding: 12px 15px;
+    text-decoration: none;
+    color: black;
+    font-family: inherit;
+}
+ul#menu li a{
+    font-family: initial;
+    padding: 0 15px;
+    text-decoration: none;
+    color: black;
+    font-family: inherit;
+    font-size: 25px;
+}
+ul#menu li a:hover{
+    color: red;
+}
+
+.tim{
+    margin-top: 36px;
+    margin-left: 20px;
+    background: url(./search.png) no-repeat right;
+    padding: 15px;
+    border: black solid 1px;
+    border-radius: 15px;
+    outline: none;
+}
+.photo{
+    float: left;
+    margin-left: 135px;
+}
+.photo img{
+    width: 250px;
+    height: 300px;
+    box-sizing: border-box;
+    
+}
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    margin-bottom: 10px;
+    float: left;
+    font-size: 15px;
+    border: 5px white solid;
+    background-color: goldenrod;
+}
+.card p{
+    text-align: center;
+}
+.card h6{
+    /* font-family: Noto Sans,AdihausDIN,Helvetica,Arial,sans-serif!important; */
+    text-align: center;
+}
+.price {
+    color: red;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#finish{
+    padding: 0px 150px  ;
+    margin: 0px auto;
+}
+#footer1 ul{
+    
+    font-weight: 200px;
+    background-color: #ede734;
+}
+#footer1 ul li a{
+    float: left;
+    text-decoration: none;
+    font-family: inherit;
+    color: black;
+}
+#footer1 ul li{
+    margin-left: 100px;
+}
+

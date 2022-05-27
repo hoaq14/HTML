@@ -1,0 +1,206 @@
+#header  img{
+    width: 105px;
+    height: 105px;
+    padding-top: 15px;
+    margin-left: 150px;
+}
+
+ul#menu {
+    float: right;
+    margin-top: 40px;
+    padding-right: 200px;
+}
+#menu img{
+    height: 32px;
+    width: 38px;
+    margin-top: 17px;
+    margin-left: 10px;
+}
+ul#menu li{
+    float: left;
+    margin-top: 30px;
+    list-style: none;
+}
+ul#menu li a{
+    padding: 12px 15px;
+    text-decoration: none;
+    color: black;
+    font-family: inherit;
+    font-size: 25px;
+}
+ul#menu li a:hover{
+    color: red;
+}
+.wrap ul{
+    text-align: center;
+    padding-top: 10px ;     
+}
+.wrap ul li {
+    
+    list-style: none;
+}
+.wrap ul li a {
+    text-decoration: none;
+    color: black;
+    font-family: monospace;
+    line-height: 1.1;  
+    font-size: 25px;  
+}
+.photo{
+    float: left;
+    margin-left: 200px;
+}
+.photo img{
+    width: 277px;
+    height: 277px;
+    box-sizing: border-box;
+}
+.card {
+    max-width: 277px;
+    margin-bottom: 10px;
+    float: left;
+    font-size: 15px;
+    border: 5px white solid;
+    position: relative;
+}
+.card u{
+    padding-left: 57px;
+    color: #000000;
+    line-height: 16px;
+    overflow: hidden;
+    font-family:monospace ;
+}
+.card p{
+    font-family:cursive;
+}
+.card .content-text{
+    position: absolute;
+    top: 10px;
+    left: 100px;
+}
+#photo2{
+    float: left;
+    margin-left: 160px;
+}
+#photo2 img{
+   float: left;
+   width: 409px;
+   height: 549px;
+}
+#card{
+    margin-bottom: 10px;
+    float: left;
+    font-size: 15px;
+    border: 5px white solid;
+    position: relative;
+}
+#card a :hover{
+    transform: scale(0.9);
+    transition: 1ms;
+    border: solid 1px black;
+    box-shadow: rgb(red, green, blue);
+}
+#card .content-text{
+    position: absolute;
+    top: 80px;
+    left: 15px;
+    margin: 110px;
+    font-size: 22px;
+    font-family: serif;
+    color: black;
+}
+#wrap ul{
+    clear: both;
+    text-align: center;
+    padding-top: 15px ;     
+}
+#wrap ul li {
+    
+    list-style: none;
+}
+#wrap ul li p{
+    color: dimgray;
+    font-family: monospace;
+}
+#wrap ul li a {
+    text-decoration: none;
+    color: black;
+    font-family: monospace;
+    line-height: 1.1;  
+    font-size: 25px;  
+}
+.photo3{
+    float: left;
+    margin-left: 200px;
+}
+.photo3 img{
+    width: 300px;
+    height: 280px;
+    box-sizing: border-box;
+}
+.photo4 img{
+    width: 89%;
+    height: 100%;
+    margin-left: 119px;
+}
+#card1{
+    float: left;
+}
+.photo5{
+    float: left;
+    margin-left: 180px;
+}
+.photo5 img{
+    width: 204px;
+    height: 290px;
+    box-sizing: border-box;
+    padding: 2px;
+    border: solid 2px white;
+}
+.end{
+    clear: both;
+    float: left;
+    display: flex;
+}
+.end ul{
+    margin-left: 150px;
+}
+.end ul li{
+    list-style: none;
+}
+.end ul li a{
+    text-decoration: none;
+    font-family: monospace;
+    color: black;
+}
+
+#end2 ul{
+    margin-left: 40px;
+    margin-top: 60px;
+    float: left;
+}
+#end2 ul li{
+    list-style: none;
+}
+#end2 ul li a{
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+    font-family: monospace;
+}
+#end3{
+    float: left ;
+
+}
+#end3 ul{
+    margin-left: 120px;
+    float: left;
+    margin-top: 60px;
+    list-style: none;
+}
+#end3 ul li a{
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    font-family: monospace;
+}

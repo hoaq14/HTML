@@ -1,0 +1,38 @@
+.container{
+    width: 970px;
+    margin: 0 auto;
+}
+a{
+    text-decoration: none;
+}
+.clearFix{
+    display: block;
+    content: "";
+    clear: both;
+}
+.logo{
+    float: left;
+}
+.logo img{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+.cMenu{
+    float: right;
+    line-height: 102.4px;
+    background-color: white;
+}
+.cMenu li{
+    float: left;
+}
+.cMenu li a{
+    padding: 10px 15px;
+    display: inline-block;
+    color: royalblue;
+    font-size: 30px;
+    font-family: monospace;
+}
+.cMenu li a:hover{
+    color: springgreen;
+}

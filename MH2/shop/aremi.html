@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Fashion</title>
+    <link rel="stylesheet" href="./bootstrap/bootstrap-4.5.3-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="./phu.css">
+    <link rel="stylesheet" href="./img_aremi/owl.carousel.min.css">
+    <link rel="stylesheet" href="./img_aremi/owl.theme.default.min.css">
+
+    <!-- javascript -->
+    <script src="./img_aremi/jquery.min.js"></script>
+    <script src="./img_aremi/owl.carousel.js"></script>
+    <link rel="shortcut icon" href="./img_aremi/ab43c660a7d9c0210c2deaacb4d2246a.jpg">
+    <style> 
+        #myBtn {
+          display: none;
+          position: fixed;
+          bottom: 20px;
+          right: 30px;
+          z-index: 99;
+          font-size: 18px;
+          border: none;
+          outline: none;
+          background-color: red;
+          color: white;
+          cursor: pointer;
+          padding: 15px;
+          border-radius: 4px;
+        }
+        
+        #myBtn:hover {
+          background-color: #555;
+        }
+    </style>
+</head>
+<body>
+    <!-- <div class="container xl"> -->
+    <div style="background-color:rgb(243, 209, 200);margin: -13px;" id="go">
+        <p style="text-align: center; padding: 15px 15px; font-size: 12px; font-family: monospace; ">Tin Tức Mới</p>
+    </div>
+    
+    <div style="margin:0 auto;" class="row">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <img style="width: 10%;"  src="./img_aremi/ab43c660a7d9c0210c2deaacb4d2246a.jpg" alt="">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div  class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                  <a style="font-family: monospace; font-size: 24px; " class="nav-link" href="./aremi.html">Trang Chủ <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a style="font-family: monospace; font-size: 24px; " class="nav-link" href="./sanpham.html">Sản Phẩm</a>
+                </li>
+                <li class="nav-item">
+                  <a style="font-family: monospace; font-size: 24px; " class="nav-link " href="./Blog.html" >Blog</a>
+                </li>
+                <li class="nav-item">
+                    <a style="font-family: monospace; font-size: 24px; " class="nav-link " href="./Gioithieu.html" tabindex="-1" aria-disabled="true">Giới Thiệu</a>
+                </li>
+              </ul>
+              <!-- <form class="form-inline my-2 my-lg-0">
+                 <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search"> -->
+                <a href="./search.html"><button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button></a>
+              </form> 
+            </div>
+        </nav>
+    </div>
+        <!-- <div style="background-color:rgb(243, 209, 200);margin: -13px;" id="go">
+            <p style="text-align: center; padding: 10px 15px; font-size: 12px; font-family: monospace; ">Tin Tức Mới</p>
+        </div>
+        <div class="header">
+        <a href="./aremi.html"><img src="./img_aremi/ab43c660a7d9c0210c2deaacb4d2246a.jpg" alt=""></a>
+            <ul id="menu" style="clear: both;">
+                <li style="margin-top: 70px;" ><a href="./aremi.html">Trang Chủ</a></li>
+                <li style="margin-top: 70px;" ><a href="./sanpham.html">Sản Phẩm</a></li>
+                <li style="margin-top: 70px;" ><a href="./Blog.html">Blog</a></li>
+                <li style="margin-top: 70px;" ><a href="./Gioithieu.html">Giới Thiệu</a></li>
+                <a href="./search.html"><img style="margin-top: 50px;" src="./img_aremi/icon_3.png" alt=""></a>
+                <a href="./love.html"><img style="margin-top: 50px;" src="./img_aremi/icon_1.webp" alt=""></a>
+                <a href="./thanhtoan.html"><img src="./img_aremi/icon_2.jpg" alt=""></a>
+                
+                <!The Modal -->
+             <!-- <button id="cart">
+                <i class="fa fa-shopping-basket" aria-hidden="true"></i>
+                                Giỏ Hàng
+            </button>
+            <div style="z-index: 999;" id="myModal" class="modal">
+
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Giỏ Hàng</h5>
+                        <span class="close">&times;</span>
+                    </div>
+                    <div class="modal-body">
+                        <div class="cart-row">
+                            <span class="cart-item cart-header cart-column">Sản Phẩm</span>
+                            <span class="cart-price cart-header cart-column">Giá</span>
+                            <span class="cart-quantity cart-header cart-column">Số Lượng</span>
+                        </div>
+                        <div class="cart-items">
+
+                        </div>
+                        <div class="cart-total">
+                            <strong class="cart-total-title">Tổng Cộng:</strong>
+                            <span class="cart-total-price">0VNĐ</span>
+                        </div>
+                    </div>
+
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary close-footer">Đóng</button>
+                        <button type="button" class="btn btn-primary order">Thanh Toán</button>
+                    </div>
+                </div>
+            </div>  -->
+            <br>
+
+            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                  <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                  <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                  <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="./img_aremi/banner_1.webp" class="d-block w-100" alt="">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./img_aremi/banner_2.webp" class="d-block w-100" alt="">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./img_aremi/banner_3.webp" class="d-block w-100" alt="">
+                  </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+                </a>
+              </div>
+
+        <!-- <div class="hihi">
+        <div class="owl-carousel owl-theme">
+                <div style="margin-bottom: 50px;" class="ban">
+                    <img src="./img_aremi/banner_1.webp" alt="">
+                </div>
+                <div class=" ban">
+                    <img src="./img_aremi/banner_2.webp" alt="">
+                </div>
+                <div class=" ban">
+                    <img src="./img_aremi/banner_3.webp" alt="">
+                </div>
+        </div>
+        </div> -->
+    
+        <div class="wrap">
+            <ul>
+                <li><a href="">Sản Phẩm Bán Chạy</a></li><br>
+                <hr style="width: 50px;">
+                <li><a href="" style=" color: dimgray; font-size: 14px; ">Xem Thêm</a></li>
+            </ul>
+        </div>
+       <div class="photo">
+
+            <div class="card">
+                        <img src="./img_aremi/65ef017f81e67db824f7_75421167ca1a4883b6f91569f34eff44.jpg " alt="">
+                    <u style="text-decoration: none; text-align: center;">POLO ARPL30 MIX COLOR</u>
+                        <p style="text-align: center;"> 320,000₫</p>
+            </div>
+
+            <div class="card">
+                        <img src="./img_aremi/anh_3.jpg" alt="">
+                    <u style="text-decoration: none;">POLO ARPL36 MIX COLOR</u>
+                        <p style="text-align: center ;"> 320,000₫</p>     
+            </div>
+
+            <div class="card">
+                        <img src="./img_aremi/anh_4.jpg" alt="">
+                    <u style="text-decoration: none; text-align: center;">POLO ARPL41 MIX COLOR</u>
+                        <p style="text-align: center;"> 320,000₫</p>     
+            </div>
+           
+
+            <div class="card">
+                    <img src="./img_aremi/anh_5.jpg" alt="">
+                <u style="text-decoration: none; text-align: center;">POLO ARPL46 MIX COLOR</u>
+                <p style="text-align: center ;"> 320,000₫</p> 
+            </div>
+        </div>
+        <div class="photo2">
+        <div class="card">
+                <a href=""><img  src="./img_aremi/anh_10.webp" alt=""></a>
+            <div class="content-text">
+                <p style="font-size: smaller; margin-left: 20px;">THANH LỊCH</p>
+                    <hr style="width: 40px; ">
+                <p style="font-size: smaller; margin-left: 20px;font-size: 20px;">Xem Thêm</p>
+                    
+            </div>
+        </div>
+        <div class="card">
+               <a href=""> <img src="./img_aremi/anh_8 (2).jpg" alt=""></a>
+            <div class="content-text">
+                <p style = " margin-left: 30px; font-size: 20px;">MẠNH MẼ</p>
+                    <hr style="width: 40px; margin-left: 55px;">
+                <p style="font-size: smaller; margin-left: 30px; font-size: 20px;">Xem Thêm</p>
+                    
+            </div>
+        </div>
+        <div class="card">
+                <a href=""><img src="./img_aremi/anh_7.webp" alt=""></a>
+            <div class="content-text">
+                <p style="font-size: smaller; margin-left: 20px;">NĂNG ĐỘNG</p>
+                     <hr style="width: 40px; ">
+                <p style="font-size: smaller; margin-left: 20px; font-size: 20px;">Xem Thêm</p>
+                   
+            </div>
+        </div>
+        </div>
+        <div class="wrap">
+            <ul>
+            <li><a href="">Sản Phẩm Áo Thun</a></li><br>
+                <hr style="width: 50px;">
+            <li><p href="">Xem Thêm</p></li>
+        </ul>
+        </div>
+        <div class="photo3">
+            <div class="card">
+                    <img src="./img_aremi/spm1.webp" alt="">
+                <u style="text-decoration: none;">tiêu đề sản phẩm mẫu</u>
+                    <p style="text-align: center ;"> <b>199,000₫</b></p>
+            </div>
+            <div class="card">
+                    <img src="./img_aremi/spm2.webp" alt="">
+                <u style="text-decoration: none;">tiêu đề sản phẩm mẫu</u>
+                    <p style="text-align: center ;"> <b>199,000₫</b></p>
+            </div>
+            <div class="card">
+                    <img src="./img_aremi/spm3.webp" alt="">
+                <u style="text-decoration: none;">tiêu đề sản phẩm mẫu</u>
+                    <p style="text-align: center ;"> <b>199,000₫</b></p>
+            </div>
+            <div class="card">
+                    <img src="./img_aremi/spm4.webp" alt="">
+                <u style="text-decoration: none;">tiêu đề sản phẩm mẫu</u>
+                    <p style="text-align: center ;"> <b>199,000₫</b> <strike>  299,000₫</strike></p>
+            </div>
+    </div>
+    <br>
+    <div class="photo4">
+        <img src="./img_aremi/anh_13.jpg" alt="">
+    </div>
+    <div style="margin: 0 auto;" class="wrap">
+        <ul>
+           <li><a href="">NEW COLLECTION</a></li><br>
+           <hr style="width: 50px;"><br>
+       </ul>
+   </div>
+   <div class="photo5">
+        <div class="card1">
+                <img src="./img_aremi/anh_14.jpg" alt="">
+        </div>
+        <div class="card1">
+            <img src="./img_aremi/anh_15.webp" alt="">
+        </div>
+        <div class="card1">
+            <img src="./img_aremi/anh_16.jpg" alt="">
+        </div>
+        <div class="card1">
+            <img src="./img_aremi/anh_17'.webp" alt="">
+        </div>
+        <div class="card1">
+            <img src="./img_aremi/anh_18.webp" alt="">
+        </div>
+    </div>
+        
+            <div class="end">
+                <ul><br>
+                    <br>
+                    <li><a href="" style="font-size: 18px;">AREMI - OUR MISSION IS YOUR <br> SASTIFACTION!</a></li><br>
+                    <li><a href="" style="font-size: 14px;">Thương hiệu thời trang nam dẫn đầu <br> phong cách đơn giản, hiện đại và sang <br> trọng.</a></li>
+                    <img style="width: 30%; " src="./img_aremi/logo-bct.webp" alt=""><br>    
+                    <img style="width: 30px; height: 30px;" src="./img_aremi/pink_1.png" alt="">
+                    <img style="width: 30px; height: 30px;" src="./img_aremi/pink_2.png" alt="">
+                    <img style="width: 30px; height: 30px;" src="./img_aremi/pink_3.png" alt="">
+                    <img style="width: 40px; height: 30px;" src="./img_aremi/download.jpg" alt="">
+                </ul>
+                
+            <div id="end2">
+                    <ul>
+                        <li><a href=""style="font-size: 18px">Bổ Sung</a></li><br>
+                        <li><a href="">Địa chỉ: Quang Minh - Mê Linh - Hà Nội</a></li>
+                        <li><a href="">Điện thoại: 058334569</a></li>
+                        <li><a href="">mail: minhhoang140802@gmail.com</a></li>  
+                    </ul>
+                    <div id="end3">
+                            <ul>
+                                <li><a href="https://www.facebook.com/Aremi.brand.vn/">FANPAGE</a></li>
+                            </ul>
+                    </div>   
+            </div>
+        </div>
+               
+</div>
+ <button  onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+    <script>
+        //Get the button
+        var mybutton = document.getElementById("myBtn");
+        
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function() {scrollFunction()};
+        
+        function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            mybutton.style.display = "block";
+        } else {
+            mybutton.style.display = "none";
+        }
+        }
+        
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+        }
+    </script>
+<!-- <script>
+    $('.owl-carousel').owlCarousel({
+    loop:true,
+    margin:10,
+    nav:true,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:1
+        },
+        1000:{
+            items:1
+        }
+    }
+})
+</script> -->
+<!-- <script>
+    // Modal
+var modal = document.getElementById("myModal");
+var btn = document.getElementById("cart");
+var close = document.getElementsByClassName("close")[0];
+// tại sao lại có [0] như  thế này bởi vì mỗi close là một html colection nên khi mình muốn lấy giá trị html thì phải thêm [0]. 
+// Nếu mình có 2 cái component cùng class thì khi [0] nó sẽ hiển thị component 1 còn [1] thì nó sẽ hiển thị component 2.
+var close_footer = document.getElementsByClassName("close-footer")[0];
+var order = document.getElementsByClassName("order")[0];
+btn.onclick = function () {
+  modal.style.display = "block";
+}
+close.onclick = function () {
+  modal.style.display = "none";
+}
+close_footer.onclick = function () {
+  modal.style.display = "none";
+}
+order.onclick = function () {
+  alert("Cảm ơn bạn đã thanh toán đơn hàng")
+}
+window.onclick = function (event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script> -->
+<script src="./jquery/jquery-3.5.1.min.js"></script>
+<script src="./bootstrap/bootstrap-4.5.3-dist/js/bootstrap.js"></script>
+<!-- <script src=""></script> -->
+</body>
+</html>

@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="shortcut icon" href="./img_aremi/ab43c660a7d9c0210c2deaacb4d2246a.jpg">
+    <style>
+        body {font-family: Arial, Helvetica, sans-serif;}
+        
+        /* Full-width input fields */
+        input[type=text], input[type=password] {
+          width: 100%;
+          padding: 12px 20px;
+          margin: 8px 0;
+          display: inline-block;
+          border: 1px solid #ccc;
+          box-sizing: border-box;
+        }
+        
+        /* Set a style for all buttons */
+        button {
+          background-color: #f3bdbddc;
+          color: white;
+          padding: 14px 20px;
+          margin: 8px 0;
+          border: none;
+          cursor: pointer;
+          width: 100%;
+        }
+        
+        button:hover {
+          opacity: 0.8;
+        }
+        a:hover{
+          color: red;
+        }
+        
+        /* Extra styles for the cancel button */
+        .cancelbtn {
+          width: auto;
+          padding: 10px 18px;
+          background-color: #f44336;
+        }
+        
+        /* Center the image and position the close button */
+        .imgcontainer {
+          text-align: center;
+          margin: 24px 0 12px 0;
+          position: relative;
+        }
+        
+        img.avatar {
+          width: 40%;
+          border-radius: 50%;
+        }
+        
+        .container {
+          padding: 16px;
+        }
+        
+        span.psw {
+          float: right;
+          padding-top: 16px;
+        }
+        
+        /* The Modal (background) */
+        .modal {
+          display: none; /* Hidden by default */
+          position: fixed; /* Stay in place */
+          z-index: 1; /* Sit on top */
+          left: 0;
+          top: 0;
+          width: 100%; /* Full width */
+          height: 100%; /* Full height */
+          overflow: auto; /* Enable scroll if needed */
+          background-color: rgb(0,0,0); /* Fallback color */
+          background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+          padding-top: 60px;
+        }
+        
+        /* Modal Content/Box */
+        .modal-content {
+          background-color: #fefefe;
+          margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+          border: 1px solid #888;
+          width: 80%; /* Could be more or less, depending on screen size */
+        }
+        
+        /* The Close Button (x) */
+        .close {
+          position: absolute;
+          right: 25px;
+          top: 0;
+          color: #000;
+          font-size: 35px;
+          font-weight: bold;
+        }
+        
+        .close:hover,
+        .close:focus {
+          color: red;
+          cursor: pointer;
+        }
+        
+        /* Add Zoom Animation */
+        .animate {
+          -webkit-animation: animatezoom 0.6s;
+          animation: animatezoom 0.6s
+        }
+        
+        @-webkit-keyframes animatezoom {
+          from {-webkit-transform: scale(0)} 
+          to {-webkit-transform: scale(1)}
+        }
+          
+        @keyframes animatezoom {
+          from {transform: scale(0)} 
+          to {transform: scale(1)}
+        }
+        
+        /* Change styles for span and cancel button on extra small screens */
+        @media screen and (max-width: 300px) {
+          span.psw {
+             display: block;
+             float: none;
+          }
+          .cancelbtn {
+             width: 100%;
+          }
+        }
+      #header  img{
+          width: 105px;
+          height: 105px;
+          padding-top: 15px;
+          margin-left: 150px;
+      }
+      ul#menu {
+          float: right;
+          margin-top: 40px;
+          padding-right: 200px;
+      }
+      #menu img{
+          height: 32px;
+          width: 38px;
+          margin-top: 17px;
+          margin-left: 10px;
+      }
+      ul#menu li{
+          float: left;
+          margin-top: 30px;
+          list-style: none;
+      }
+      ul#menu li a{
+          padding: 12px 15px;
+          text-decoration: none;
+          color: black;
+          font-family: monospace;
+          font-size: 25px;
+      }
+      ul#menu li a:hover{
+          color: red;
+      }#header  img{
+          width: 105px;
+          height: 105px;
+          padding-top: 15px;
+          margin-left: 150px;
+      }
+      ul#menu {
+          float: right;
+          margin-top: 40px;
+          padding-right: 200px;
+      }
+      #menu img{
+          height: 32px;
+          width: 38px;
+          margin-top: 17px;
+          margin-left: 10px;
+      }
+      ul#menu li{
+          float: left;
+          margin-top: 30px;
+          list-style: none;
+      }
+      ul#menu li a{
+          padding: 12px 15px;
+          text-decoration: none;
+          color: black;
+          font-family: monospace;
+          font-size: 25px;
+      }
+      ul#menu li a:hover{
+          color: red;
+      }
+      .photo5{
+          float: left;
+          margin-left: 180px;
+          display: flex;
+      }
+      .photo5 img{
+          width:  100%;
+          box-sizing: border-box;
+          padding: 2px;
+          border: solid 2px white;
+          float: left;
+      }
+      .end{
+          clear: both;
+          float: left;
+          display: flex;
+      }
+      .end ul{
+          margin-left: 150px;
+      }
+      .end ul li{
+          list-style: none;
+      }
+      .end ul li a{
+          text-decoration: none;
+          font-family: monospace;
+          color: black;
+      }
+
+      #end2 ul{
+          margin-left: 40px;
+          margin-top: 60px;
+          float: left;
+      }
+      #end2 ul li{
+          list-style: none;
+      }
+      #end2 ul li a{
+          text-decoration: none;
+          color: black;
+          font-size: 14px;
+          font-family: monospace;
+      }
+      #end3{
+          float: left ;
+      }
+      #end3 ul{
+          margin-left: 120px;
+          float: left;
+          margin-top: 60px;
+          list-style: none;
+      }
+      #end3 ul li a{
+          text-decoration: none;
+          color: black;
+          font-size: 18px;
+          font-family: monospace;
+      }
+        </style>
+</head>
+<body>
+  <div style="background-color:rgb(243, 209, 200);margin: -13px;" id="go">
+    <p style="text-align: center; padding: 10px 15px; font-size: 12px; font-family: monospace; ">Tin Tức Mới</p>
+</div>
+<div style="background-color: rgba(253, 249, 249, 0.719); font-family: monospace; margin-left: 200px; margin-right: -20px ;padding: 5px 0px; margin-top: 15px;">
+    <p style="margin-left: 20px;"><b style="font-size: 14px;">Trang chủ </b>/ Sản Phẩm </p>
+</div>
+<div id="header">
+    <a href="./aremi.html"><img src="./img_aremi/ab43c660a7d9c0210c2deaacb4d2246a.jpg" alt=""></a>
+    <ul id="menu">
+        <li><a href="./aremi.html">Trang Chủ</a></li>
+        <li><a href="./sanpham.html">Sản Phẩm</a></li>
+        <li><a href="./Blog.html">Blog</a></li>
+        <li><a href="./Gioithieu.html">Giới Thiệu</a></li>
+        <a href="./search.html"><img src="./img_aremi/icon_3.png" alt=""></a>
+        <a href="./love.html"><img src="./img_aremi/icon_1.webp" alt=""></a>
+        <a href="./thanhtoan.html"><img src="./img_aremi/icon_2.jpg" alt=""></a>
+    </ul>
+</div>
+
+<button  style="margin-left: 150px;" onclick="document.getElementById('id01').style.display='block'" style="width:auto; margin: 0 auto; ">Login</button>
+
+<div id="id01" class="modal">
+  
+  <form class="modal-content animate" action="/action_page.php" method="post">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <a style="width : 20%;  " href="./aremi.html"><img  src="./img_aremi/ab43c660a7d9c0210c2deaacb4d2246a.jpg" alt="Avatar" class="avatar"></a>
+    </div>
+
+    <div class="container">
+      <label for="uname"><b>Tên Đăng Nhập</b></label>
+      <input type="text" placeholder="Enter Tên Đăng Nhập" name="username" required>
+
+      <label for="psw"><b>Mật Khẩu</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+        
+     <!-- <a href="./aremi.html"> <button type="submit">Login</button></a> -->
+     <a style="text-decoration: none; margin-left: 550px; color: black; " href="./aremi.html">Login</a> <br>
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+      <span class="psw">Forgot <a href="#">password?</a> <a href="./Regíter.html">Register</a></span>
+    </div>
+  </form>
+</div>
+<div class="photo5">
+  <div id="card1">
+          <img src="./img_aremi/anh_14.jpg" alt="">
+  </div>
+  <div id="card1">
+          <img src="./img_aremi/anh_15.webp" alt="">
+  </div>
+  <div id="card1">
+          <img src="./img_aremi/anh_16.jpg" alt="">
+  </div>
+  <div id="card1">
+          <img src="./img_aremi/anh_17'.webp" alt="">
+  </div>
+  <div id="card1">
+          <img src="./img_aremi/anh_18.webp" alt="">
+  </div>
+  <div id="card1">
+          <img src="./img_aremi/anh_19.webp" alt="">
+  </div>
+</div>
+
+<div class="end">
+      <ul><br>
+          <br>
+          <li><a href="" style="font-size: 18px;">AREMI - OUR MISSION IS YOUR <br> SASTIFACTION!</a></li><br>
+          <li><a href="" style="font-size: 14px;">Thương hiệu thời trang nam dẫn đầu <br> phong cách đơn giản, hiện đại và sang <br> trọng.</a></li>
+          <img style="width: 150px; height: 150px;" src="./img_aremi/logo-bct.webp" alt=""><br>    
+          <img style="width: 30px; height: 30px;" src="./img_aremi/pink_1.png" alt="">
+          <img style="width: 30px; height: 30px;" src="./img_aremi/pink_2.png" alt="">
+          <img style="width: 30px; height: 30px;" src="./img_aremi/pink_3.png" alt="">
+          <img style="width: 40px; height: 30px;" src="./img_aremi/download.jpg" alt="">
+      </ul>
+  <div id="end2">
+          <ul>
+              <li><a href=""style="font-size: 18px">Bổ Sung</a></li><br>
+              <li><a href="">Địa chỉ: Quang Minh - Mê Linh - Hà Nội</a></li>
+              <li><a href="">Điện thoại: 058334569</a></li>
+              <li><a href="">Fax: bổ sung</a></li>
+              <li><a href="">mail: minhhoang140802@gmail.com</a></li>
+          </ul>
+          <div id="end3">
+                  <ul>
+                      <li><a href="https://www.facebook.com/Aremi.brand.vn/">FANPAGE</a></li>
+                  </ul>
+          </div>   
+  </div>
+      <img  name="image" src="./img_aremi/ytb.png" alt="">
+  </div>
+<script>
+// Get the modal
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+</body>
+</html>
